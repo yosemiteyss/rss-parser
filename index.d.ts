@@ -29,6 +29,7 @@ declare namespace Parser {
     link?: string;
     guid?: string;
     title?: string;
+    description?: string;
     pubDate?: string;
     creator?: string;
     summary?: string;
