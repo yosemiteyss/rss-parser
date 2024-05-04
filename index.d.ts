@@ -25,6 +25,29 @@ declare namespace Parser {
     type?: string;
   }
 
+  export interface MediaGroup {
+    medium: string;
+    mediaTitle?: string[];
+    mediaContent?: MediaContent[];
+  }
+
+  export interface MediaContent {
+    url?: string;
+    fileSize?: string;
+    type?: string;
+    media?: string;
+    isDefault?: string;
+    expression?: string;
+    bitrate?: string;
+    framerate?: string;
+    samplingrate?: string;
+    channels?: string;
+    duration?: string;
+    height?: string;
+    width?: string;
+    lang?: string;
+  }
+
   export interface Item {
     link?: string;
     guid?: string;
@@ -38,6 +61,7 @@ declare namespace Parser {
     categories?: string[];
     contentSnippet?: string;
     enclosure?: Enclosure;
+    mediaGroup?: MediaGroup;
   }
 
   export interface PaginationLinks {
